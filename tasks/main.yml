@@ -1,0 +1,6 @@
+---
+- name: Install the latest stable Winetricks via Homebrew
+  package:
+    name: winetricks
+    state: latest
+  when: ansible_os_family == "Darwin"
